@@ -42,6 +42,8 @@ ServerName localhost
 </Directory>
 
 
+bdabb
+
 
 echo "# git-bug-repo" >> README.md
 git init
