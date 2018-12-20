@@ -49,3 +49,10 @@ git add README.md
 git commit -m "first commit"
 git remote add test-bug git@github.com:string-maaz/git-bug-repo.git
 git push -u origin master
+
+
+[/Users/maaz/Downloads/bugzillahook/.git]
+bugzilla_url: https://bugzilla.string.org.in/
+bugzilla_user: maaz.azmi@string.org.in
+bugzilla_password: azmi@4871
+allowed_bug_states: NEW, ASSIGNED, REOPENED
