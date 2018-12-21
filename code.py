@@ -43,7 +43,7 @@ ServerName localhost
 
 
 bdabb
-
+cczc
 
 echo "# git-bug-repo" >> README.md
 git init
