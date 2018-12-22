@@ -58,3 +58,8 @@ bugzilla_url: https://bugzilla.string.org.in/
 bugzilla_user: maaz.azmi@string.org.in
 bugzilla_password: azmi@4871
 allowed_bug_states: NEW, ASSIGNED, REOPENED
+os.environ["DEBUSSY"] = "1"
+
+os.environ["GHBH_BUGZILLA_URL"]="https://bugzilla.string.org.in/xmlrpc.cgi"
+os.environ["GHBH_BUGZILLA_USERNAME"]="maaz.azmi"
+os.environ["GHBH_BUGZILLA_PASSWORD"]="azmi@4871"
