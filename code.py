@@ -44,7 +44,7 @@ ServerName localhost
 
 bdabb
 cczc
-
+ds
 echo "# git-bug-repo" >> README.md
 git init
 git add README.md
