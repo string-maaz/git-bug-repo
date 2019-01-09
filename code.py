@@ -43,6 +43,7 @@ ServerName localhost
 
 
 bdabb maaaz ankit 
+ADMIN_MEDIA_PREFIXaaadaa
 cczc
 dsdsfmnn
 echo "# git-bug-repo" >> README.md
