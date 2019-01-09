@@ -63,3 +63,34 @@ os.environ["DEBUSSY"] = "1"
 os.environ["GHBH_BUGZILLA_URL"]="https://bugzilla.string.org.in/xmlrpc.cgi"
 os.environ["GHBH_BUGZILLA_USERNAME"]="maaz.azmi"
 os.environ["GHBH_BUGZILLA_PASSWORD"]="azmi@4871"
+
+for each_page in Pages.objects.all():
+	if not each_page.is_active:
+		sugg_objs = SuggestionPage.objects.filter(page = each_page)
+		if sugg_objs:
+			for each_obj in sugg_objs:
+				if each_obj.is_active:
+					print("inactivating",each_page.name)
+					each_obj.is_active = False
+					each_obj.save()
+
+for each_user in User.objects.filter(is_active=True):
+	all_follow = Follower.objects.filter(user_follower = each_user,is_active = True, is_archived = False).values_list("user_following",flat=True)
+	sugg_user = SuggestionUser.objects.filter(for_user = each_user,is_active = True)
+	for each_sugg_obj in sugg_user:
+		if each_sugg_obj.sugg_user_id in all_follow:
+			print("inactivting suggestion",each_user,each_sugg_obj.sugg_user)
+			each_sugg_obj.is_active=False
+			each_sugg_obj.save()
+
+
+
+
+
+
+
+
+
+
+
+
